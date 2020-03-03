@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Oxygen|Prata&display=swap" rel="stylesheet">
+        <title>Tolv</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            img{
+                width: 100%;
+                height: auto;
+               
+            }
+            .grup2{
+                background: orange;
+            }
+            nav{
+                font-family: 'Oxygen', sans-serif;
+                z-index: 1;
+                font-weight: 100;
+                height: 100px;
+                width: 100%;
+            }
+            .navigation{
+                padding: 0.5em 0 0 0;
+                width: 40%;
+            }
+            .navigation a{
+                margin: 0 1.5em 0 0;
+            }
+            .navigation a:hover{
+                cursor: pointer;
+                border-bottom: 2px solid black;
+            }
+            header{
+                padding: 2em 2em;
+                width: 100%;
+                display: flex;
+                position: fixed;
+            }
+          .logo{
+                padding: 0.5em 0 0 0;
+                justify-content: center;
+                align-content: center;
+                object-position: center;
+                margin-right: 45%;
+            }
+            #lupa{
+                padding: 0.5em 0 0 0;
+                color: black;
+            }
+            .container{
+                font-family: 'Prata', serif;
+            }
+            .grup1{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+               grid-template-rows: repeat(1, 1fr); 
+                object-fit: cover;
+            }
+            .text1{
+                margin-left: 20%;
+                margin-right: 20%;
+                margin-top: 40%;
+                align-content: center;
+                text-align: center;
+            }
+            .text2{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .grup2{
+                padding: 10%;
+                text-align: center;
+            }
+                 .grid_img img{
+                object-fit: cover;
+                overflow: hidden;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .grid_img main{
+                padding: 0 4em;
+            }
+            .grid_img>div{
+                display: flex;
+                flex-direction: column;
+                padding: 2px;
+            }
+            .grid_img{
+                display: grid;
+                grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+            }
+            .item-1{
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .item-5{
+                grid-row-start: 2;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            footer{
+                font-family: 'Oxygen', sans-serif;
+                background: grey;
+                padding: 1.5em;
+                color: white;
+            }
+            .footgrid{                
+                display: grid;
+                grid-template: repeat(2,1fr)/repeat(4,1fr);
+                grid-gap: 20px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+            }
+            .links:hover{
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.6s opacity;
+            }
+/* Para móvil */
+            @media (min-device-width: 300px) and (max-device-width: 480px){
+                body{
+                    font-size: 8px;
+                }
+                .container{
+                    grid-template: repeat(4,1fr)/repeat(2,1fr);  
+                }
+            }
+        /* Para iPad */
+            @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+                body{
+                    font-size: 8px;
+                }
+                .container{
+                    grid-template: repeat(4,1fr)/repeat(3,1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+      <header>
+           <nav>
+                 <div class="navigation">
+                      <a>Products</a>
+                      <a>Stocklist</a>
+                      <a>About us</a>
+                 </div>
+            </nav>
+            <div class="logo">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="simbol">
+                <img src="" alt="">
+            </div>
+          <a href="#" id="lupa"><i class="fas fa-search"></i></a>
+        </header>
+        <div class="container">
+           <main>
+            <div class="grup1">
+                <img src="img/baixa.jpeg" alt="">
+                <div class="text1">
+                    <h1>Lift the blind to let in the light. A moment of calm before the day begins.</h1>
+                    <p>Featuring Cherry sofa and Kile coffee table</p>
+                </div>
+            </div>
+            <div class="grup2">
+                <div class="text2">
+                <h1>Time for Living</h1>
+                <p>Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair. At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.</p>
+                <p>Find out more About us</p>
+                </div>
+            </div>
+            <div class="grid_img">
+                   <div class="item-1">
+                       <img src="img/baixa%20(1).jpeg" alt="">
+                    </div>
+                   <div class="item-2">
+                       <img src="img/baixa%20(2).jpeg" alt="">
+                   </div>
+                   <div class="item-3">
+                       <img src="img/baixa%20(3).jpeg" alt="">
+                   </div>
+                   <div class="item-4">
+                       <img src="img/baixa%20(4).jpeg" alt="">
+                   </div>
+                   <div class="item-5">
+                       <img src="img/baixa%20(5).jpeg" alt="">
+                   </div>
+                   <div class="item-6">
+                       <img src="img/baixa%20(6).jpeg" alt="">
+                   </div>
+            </div>
+           </main>
+           <footer>
+              <div class="footgrid">
+               <section class="sec1">
+                   <h4>Products:</h4>
+                   <div class="links">
+                       <p>Lounge Chairs</p>
+                   </div>
+                    <div class="links"> 
+                       <p>Sofas</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Daybeds</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Poufs</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Dining Chairs</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Stools</p>
+                    </div>
+                      <div class="links"> 
+                       <p>Tables & Desks</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Storage</p>
+                   </div>
+               </section>
+               <section class="sec2">
+                   <h4>Useful information:</h4>
+                   <div class="links">
+                   </div>
+                          <p>Our stockists</p>
+                    <div class="links"> 
+                       <p>Our designers</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Product care</p>
+                   </div>
+               </section>
+               <section class="sec3">
+                   <h4>Company:</h4>
+                   <div class="links">   
+                       <p>News</p>
+                   </div>
+                    <div class="links"> 
+                       <p>About us</p>
+                   </div>
+                    <div class="links"> 
+                       <p>Contact us</p>
+                   </div>
+               </section>
+               <section class="sec4">
+                   <h4>Connect with us:</h4>
+                   <div class="links">
+                       <p>Facebook</p>
+                   </div>
+                   <div class="links"> 
+                       <p>Instagram</p>
+                   </div>
+                   <div class="links"> 
+                       <p>Blank</p>
+                   </div>
+                   <h4>Access to:</h4>
+                   <div class="links">
+                       <p>Client login</p>
+                   </div>
+               </section>
+               </div>
+               <div class="text3">
+               <p>All rights reserved Tolv © 2020</p>
+                   </div>
+           </footer>
+        </div>
+    </body>
+</html>
